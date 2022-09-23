@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!--    Connecting Listener Util class to the test class
+This automatically connects Listener to Test classes
+This works only when we run from this xml file
+This is the 2nd way of using listeners-->
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="utilities.Listeners">
+
+        </listener>
+    </listeners>
+    <test verbose="2" preserve-order="true"
+          name="ListenerTest1Testing">
+        <classes>
+            <class name="tests.listeners.Listeners1Test">
+            </class>
+        </classes>
+    </test>
+</suite>
